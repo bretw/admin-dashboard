@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+
+ul {
+   row-gap: 30px;
+}
+.grid-container {
+display: grid;
+grid-template-columns: 200px 4fr;
+grid-template-rows: 1fr 5fr .5fr;
+height: 100vh; 
+background-color: blue;
+
+}
+    .sidebar {
+        padding: 10px;
+max-width: 20vh;
+grid-area: 1 / 1 / 3/ 2;
+display: grid;
+gap: 10px;
+grid-template-rows: 1fr 5fr 2fr 5fr;
+    }
+
+    .sidebar * img {
+        width:40px;
+        height: 40px;
+    }
+
+    .sidebar-header {
+        display: flex;
+        flex-wrap: nowrap;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 600;
+        font-size: larger;
+    }
+    .header {
+        padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: cadetblue;
+    }
+
+        .header-top{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        background-color: rgb(106, 214, 218);
+        }
+            .header-top-left {
+
+            }
+
+            .header-top-right {
+
+            }
+
+        .header-bottom{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            background-color: rgb(41, 80, 82);
+        }
+    .main-area {
+        padding: 10px;
+        grid-area: 2 / 2 / 4 / 3;
+        background-color: grey;
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+        grid-template-rows: 1fr 5fr 1fr 5fr 1fr;
+    } 
+    .project-heading {
+        padding: 10px;
+    }
+        .projects {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+           grid-area: 2 / 1 / 5 / 2;
+        }
+            .card { padding: 10px;
+border: 1px solid brown;
+margin: 10px;
+max-height: 300px;
+display: grid;
+grid-template-rows: minmax(500px 10fr) minmax(30px 100px);
+            }
+                .card-top {
+                    border: 1px solid azure;
+                }
+                .card-bottom {
+                    border: 1px solid blue;
+                }
+
+
+        .announcement-heading {
+            display: grid;
+            grid-area: 1 / 2 / 2 / 3;
+            align-items: center;
+        }
+
+        .announcements {
+            background-color: red;
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            margin-bottom: 10px;
+        }
+
+        .trending-heading {
+            grid-area: 3 / 2  / 4 / 3;
+            align-items: center;
+            display: grid;
+        }
+
+        .trending {
+            background-color: yellow;
+            margin-bottom: 10px;
+
+        }
