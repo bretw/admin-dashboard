@@ -118,6 +118,7 @@ padding-left: 40px;
                     flex: 1;
                     min-width: 0;
                     padding-right: 30px;
+                    
                 }
                 .input input {
                     flex:1;
@@ -126,6 +127,7 @@ padding-left: 40px;
                     min-width:0;
                     background-color: #e2e8f0;
                     border-radius: 30px;
+                    padding: 10px;
                 }
 
             .header-top-right {
