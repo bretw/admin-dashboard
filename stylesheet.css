@@ -182,7 +182,6 @@ padding-left: 40px;
         display: grid;
         grid-template-columns: 6fr 3fr;
         grid-template-rows: .4fr 7fr .4fr 5fr 1fr;
-        max-width: 120vh;
     } 
 
     .main-area h1 {
