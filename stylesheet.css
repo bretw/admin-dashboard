@@ -63,6 +63,7 @@ display: grid;
 gap: 10px;
 grid-template-rows: 1fr 5fr 1fr 5fr;
 background-color: #1992d4;
+padding-left: 40px;
     }
 
 
